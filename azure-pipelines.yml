@@ -4,7 +4,7 @@ trigger:
 
 jobs:
 
-# All tasks on Windows
+# All tasks on Windows only to change
 - job: build_all_windows
   displayName: Build all tasks (Windows)
   condition: and(succeeded(), not(variables.task), eq(variables.os, 'Windows_NT'))
